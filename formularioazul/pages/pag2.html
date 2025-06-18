@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLetter</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+<body>
+    <div>
+        <div class="container">
+            <div class="testimonial grid-3">
+                <div class="card">
+                    <i class="fa fa-folder-open fa-inbox" aria-hidden="true"></i>
+                    <h3>Suscripcion a NewsLetter</h3>
+                    <p>Favor de ingresar sus credenciales</p>
+                    <form id="login_form" onsubmit="suscribir(event)">
+                        <p>Nombre de usuario</p>
+                        <label for="username"></label>
+                        <input type="text" id="username" class="btn" placeholder="Nombre de usuario" autocomplete="username" required>
+                        <br>
+                        <p>E-mail</p>
+                        <label for="email"></label>
+                        <input type="email" id="email" class="btn" placeholder="E-mail" autocomplete="email" required>
+                        <br>
+                        <p> Si, acepto la politica de privacidad * </p>
+                        <label for="pp"></label>
+                        <input type="checkbox" id="pp" class="btn" required>
+                        <br>
+                        <li><a href="../pages/d.html" class="outline">Información basica sobre protección de datos</a></li>
+                        <br>
+                        <p id="msgError"></p>
+                        <br>
+                        <br>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <script src="../scripts/script.js"></script>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

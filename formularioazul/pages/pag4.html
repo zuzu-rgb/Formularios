@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+<body>
+    <div>
+        <div class="container">
+            <div class="testimonial grid-3">
+                <div class="card">
+                    <i class="fa fa-folder-open fa-inbox" aria-hidden="true"></i>
+                    <h3>Acceder a la pagina</h3>
+                    <p>Favor de ingresar sus credenciales</p>
+                    <form id="login_form" onsubmit="acceder(event)">
+                        <p>E-mail</p>
+                        <label for="email"></label>
+                        <input type="email" id="email" class="btn" placeholder="E-mail" autocomplete="email" required>
+                        <br>
+                        <p>Password</p>
+                        <label for="password"></label>
+                        <input type="password" id="password" class="btn" placeholder="Nombre de usuario" autocomplete="username">
+                        <button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+                        <br>
+                        <p>Mantener la sesion iniciada</p>
+                        <label for="man"></label>
+                        <input type="radio" name="mant" id="man" value="true" class="btn"> Si
+                        <input type="radio" name="mant" id="man" value="false" class="btn"> No
+                        <br>
+                        <li><a href="../pages/passw.html" class="outline">Recordar Contraseña</a></li>
+                        <br>
+                        <p id="msgError"></p>
+                        <br>
+                        <br>
+                        <button type="submit" onclick="llevar(event)">Registrarse</button>
+                        <br>
+                        <button type="submit">Acceder</button>
+                    </form>
+                    <script>
+                        function mostrarContrasena(){
+                            var tipo = document.getElementById("password");
+                            if(tipo.type == "password"){
+                                tipo.type = "text";
+                            }else{
+                                tipo.type = "password";
+                            }
+                        }; 
+                    </script>
+                    <script src="../scripts/script.js"></script>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

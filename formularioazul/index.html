@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+<body>
+    <div>
+        <div class="container">
+            <div class="testimonial grid-3">
+                <div class="card">
+                    <i class="fa fa-folder-open fa-inbox" aria-hidden="true"></i>
+                    <h3>Log in</h3>
+                    <p>Favor de ingresar sus credenciales</p>
+                    <form id="login_form" onsubmit="authLogin(event)">
+                        <p>Username</p>
+                        <label for="username"></label>
+                        <input type="text" id="username" class="btn" placeholder="Nombre de usuario" autocomplete="username">
+                        <br>
+                        <p>Password</p>
+                        <label for="password"></label>
+                        <input type="password" id="password" class="btn" placeholder="Nombre de usuario" autocomplete="username">
+                        <p id="msgError"></p>
+                        <br>
+                        <br>
+                        <button type="submit">Acceder</button>
+                    </form>
+                    <script src="./scripts/script.js"></script>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
